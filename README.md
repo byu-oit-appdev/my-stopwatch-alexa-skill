@@ -20,9 +20,9 @@ A serverless stopwatch Alexa Skill using Amazon Lambda, zappa, flask-adk and Ama
         },
 ```
 * set up your alexa skills application at https://developer.amazon.com/edw/home.html
-** in the Interation model section fill in the values from the intent_schema.json, custom_slot_types.txt and sample_utterances.txt files respectively.
-** in the Configuration section choose the HTTPS Endpoint type
-** in the SSL Certificate section choose ' My development endpoint is a sub-domain of a domain that has a wildcard certificate from a certificate authority'
+..* in the Interation model section fill in the values from the intent_schema.json, custom_slot_types.txt and sample_utterances.txt files respectively.
+..* in the Configuration section choose the HTTPS Endpoint type
+..* in the SSL Certificate section choose ' My development endpoint is a sub-domain of a domain that has a wildcard certificate from a certificate authority'
 * update this line of code in app.py to `app.config['ASK_APPLICATION_ID'] = '<your alexa application id goes here>'`
 * update the code by running `zappa update production`
 * to undeploy the code run `zappa undeploy production`
