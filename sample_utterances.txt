@@ -1,0 +1,12 @@
+StartIntent {startword}
+StatusIntent status
+StatusIntent it's status
+StatusIntent the status
+StatusIntent give status
+StatusIntent tell status
+StatusIntent give the status
+StatusIntent give it's status
+StatusIntent tell the current status
+StatusIntent give the current status
+StopIntent {stopword}
+CancelIntent {cancelword}

@@ -1,0 +1,3 @@
+flask-ask
+boto3
+zappa

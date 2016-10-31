@@ -1,0 +1,35 @@
+{
+  "intents": [
+    {
+        "intent": "StartIntent",
+        "slots": [
+            {
+              "name": "startword",
+              "type": "STARTWORDS"
+            }
+        ]
+    },
+    {
+        "intent": "StatusIntent",
+        "slots": []
+    },
+    {
+        "intent": "StopIntent",
+        "slots": [
+            {
+              "name": "stopword",
+              "type": "STOPWORDS"
+            }
+        ]
+    },
+    {
+        "intent": "CancelIntent",
+        "slots": [
+            {
+              "name": "cancelword",
+              "type": "CANCELWORDS"
+            }
+        ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+    "production": {
+        "app_function": "app.app",
+        "s3_bucket": "zappa-9xiowa3ju",
+        "aws_region": "us-west-2",
+        "use_apigateway": true,
+        "keep_warm": false,
+        "memory_size": 128,
+        "manage_roles": false,
+        "timeout_seconds": 30,
+        "http_methods": ["POST"]
+    }
+}
