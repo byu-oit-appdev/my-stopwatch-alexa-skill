@@ -33,24 +33,24 @@ sdb = boto3.client('sdb')
 
 @ask.launch
 @ask.intent('StartIntent')
-def start(startword=""):
+def start():
     if not stopwatch_started():
         start_stopwatch()
         text = 'S. Watch started.'
         return statement(text).simple_card('Started', text)
     else:
-        return statement('Your s watch is running and has already elapsed {}.'.format(get_current_duration()))
+        return statement('S. Watch is running and has already elapsed {}.'.format(get_current_duration()))
 
 @ask.session_ended
 @ask.intent('StopIntent')
 @ask.intent('AMAZON.StopIntent')
-def stop(stopword):
+def stop():
     if stopwatch_started():
         duration = stop_stopwatch()
         text = 'S. Watch ended.  {} have elapsed.'.format(duration)
         return statement(text).simple_card('Stopped', text)
     else:
-        return statement("Your s watch hasn't started.")
+        return statement("S. Watch isn't running.")
 
 @ask.intent('StatusIntent')
 def status():
@@ -59,7 +59,7 @@ def status():
         text = 'S. Watch running.  {} have elapsed.'.format(duration)
         return statement(text).simple_card('Status', text)
     else:
-        return statement("Your s watch isn't running.")
+        return statement("S. Watch isn't running.")
 
 @ask.intent('AMAZON.HelpIntent')
 def help():
@@ -68,10 +68,13 @@ def help():
 
 @ask.intent('CancelIntent')
 @ask.intent('AMAZON.CancelIntent')
-def stop(cancelword):
-    stop_stopwatch()
-    text = 'S. Watch canceled'
-    return statement(text).simple_card('Canceled', text)
+def stop():
+    try:
+        stop_stopwatch()
+        text = 'S. Watch canceled'
+        return statement(text).simple_card('Canceled', text)
+    except KeyError:
+        return statement("S. Watch isn't running.")
 
 def stopwatch_started():
     result = sdb.get_attributes(DomainName='s-watch', ItemName=session.user.userId, ConsistentRead=True)

@@ -1,35 +1,16 @@
 {
   "intents": [
     {
-        "intent": "StartIntent",
-        "slots": [
-            {
-              "name": "startword",
-              "type": "STARTWORDS"
-            }
-        ]
+        "intent": "StartIntent"
     },
     {
-        "intent": "StatusIntent",
-        "slots": []
+        "intent": "StatusIntent"
     },
     {
-        "intent": "StopIntent",
-        "slots": [
-            {
-              "name": "stopword",
-              "type": "STOPWORDS"
-            }
-        ]
+        "intent": "StopIntent"
     },
     {
-        "intent": "CancelIntent",
-        "slots": [
-            {
-              "name": "cancelword",
-              "type": "CANCELWORDS"
-            }
-        ]
+        "intent": "CancelIntent"
     },
     {
         "intent": "AMAZON.StopIntent"

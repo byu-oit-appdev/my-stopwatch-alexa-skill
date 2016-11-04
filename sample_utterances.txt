@@ -1,4 +1,4 @@
-StartIntent {startword}
+StartIntent start
 StatusIntent status
 StatusIntent it's status
 StatusIntent the status
@@ -8,5 +8,5 @@ StatusIntent give the status
 StatusIntent give it's status
 StatusIntent tell the current status
 StatusIntent give the current status
-StopIntent {stopword}
-CancelIntent {cancelword}
+StopIntent stop
+CancelIntent cancel
