@@ -19,7 +19,7 @@ import time
 import boto3
 #import logging
 from flask import Flask
-from flask_ask import Ask, statement, session
+from flask_ask import Ask, statement, question, session
 
 app = Flask(__name__)
 ask = Ask(app, '/')
