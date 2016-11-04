@@ -5,6 +5,8 @@ A serverless stopwatch Alexa Skill using Amazon Lambda, zappa, flask-adk and Ama
 * clone the repo
 * make sure you have python2.7 and the awscli installed
 * run `aws sdb create-domain --domain-name s-watch`
+* run `python -m virtualenv venv`
+* run `source venv/bin/activate`
 * run `python -m pip install -r requirements.txt`
 * edit zappa_settings.json changing manage_roles to true
 * run `zappa deploy production`
