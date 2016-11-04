@@ -64,7 +64,7 @@ def status():
 @ask.intent('AMAZON.HelpIntent')
 def help():
     text = 'S. Watch. You can start, stop or get the status for S. Watch. What would you like to do?'
-    return question(text).simple_card('Help', text)
+    return question(text)
 
 @ask.intent('CancelIntent')
 @ask.intent('AMAZON.CancelIntent')
