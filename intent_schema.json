@@ -13,7 +13,16 @@
         "intent": "CancelIntent"
     },
     {
+        "intent": "RestartIntent"
+    },
+    {
         "intent": "AMAZON.StopIntent"
+    },
+    {
+        "intent": "AMAZON.YesIntent"
+    },
+    {
+        "intent": "AMAZON.NoIntent"
     },
     {
         "intent": "AMAZON.CancelIntent"

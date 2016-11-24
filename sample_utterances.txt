@@ -25,3 +25,5 @@ CancelIntent abort
 CancelIntent call it off
 CancelIntent quit
 CancelIntent abandon
+RestartIntent reset
+RestartIntent restart
