@@ -1,5 +1,10 @@
-# my-stopwatch-alexa-skill
+# S Watch Alexa Skill
 A serverless stopwatch Alexa Skill using Amazon Lambda, zappa, flask-adk and Amazon Simpledb.
+
+# Usage
+* Say, "Alexa, enable S Watch"
+* Then, to start the stopwatch say, "Alexa, Start S Watch"
+* To stop the stopwatch and hear how long it was running say, "Alexa, tell S Watch to end"
 
 # Developing
 * clone the repo
