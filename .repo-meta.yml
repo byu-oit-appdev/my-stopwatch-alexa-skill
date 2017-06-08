@@ -14,8 +14,8 @@ ddd:
   ubiquitous_language_url: 
   context_map_url: 
 links:
-  system_documentation_url: https://github.com/byu-oit-appdev/s-watch-alexa-skill
-  source_repo_url: https://github.com/byu-oit-appdev/s-watch-alexa-skill
+  system_documentation_url: https://github.com/byu-oit/s-watch-alexa-skill
+  source_repo_url: https://github.com/byu-oit/s-watch-alexa-skill
   swagger_urls:
 microservice: True
 technologies_used:
@@ -25,7 +25,7 @@ technologies_used:
 stages:
   production:
     urls:
-      product_page: https://github.com/byu-oit-appdev/s-watch-alexa-skill
+      product_page: https://github.com/byu-oit/s-watch-alexa-skill
       physical_url: 
       virtual_url: 
     hosting_location: 
@@ -49,5 +49,5 @@ tags:
   env: prd
   app: s-watch-alexa-skill
   team: gro:AD-Student Life Applications
-federation_json_url: https://raw.githubusercontent.com/byu-oit-appdev/s-watch-alexa-skill/master/.repo-meta.yml
+federation_json_url: https://raw.githubusercontent.com/byu-oit/s-watch-alexa-skill/master/.repo-meta.yml
 
