@@ -1,53 +1,52 @@
---- 
-$schemaver: 1.1
-name: s-watch-alexa-skill
-type: Mobile App
-aliases:
-short_description: A serverless stopwatch Alexa Skill using lambda, zappa, flask-ask and simpledb
-assignment_group: gro:AD-Student Life Applications
-notes: 
-maintained_by:
-  - pauldeden
-developed_by_byu: True
-ddd:
-  business_domain: 
-  ubiquitous_language_url: 
-  context_map_url: 
-links:
-  system_documentation_url: https://github.com/byu-oit/s-watch-alexa-skill
-  source_repo_url: https://github.com/byu-oit/s-watch-alexa-skill
-  swagger_urls:
-microservice: True
-technologies_used:
-  - Python
-  - AWS Lambda
-  - Amazon Alexa
-stages:
-  production:
-    urls:
-      product_page: https://github.com/byu-oit/s-watch-alexa-skill
-      physical_url: 
-      virtual_url: 
-    hosting_location: 
-    aws_account: 
-    relationships: 
-      depends_on:
-        db_read_write:
-        db_read_only:
-        software:
-      supports:
-        software:
-        service:
-      reverse_proxy: 
-      runs_on:
-        server_cluster:
-        virtual_server:
-        rack_server:
-        blade_server:
-tags:
-  data-sensitivity: confidential
-  env: prd
-  app: s-watch-alexa-skill
-  team: gro:AD-Student Life Applications
-federation_json_url: https://raw.githubusercontent.com/byu-oit/s-watch-alexa-skill/master/.repo-meta.yml
-
+---
+$schemaver: 2.0
+repo_url: https://github.com/byu-oit/s-watch-alexa-skill
+software:
+  - name: s-watch-alexa-skill
+    type: Mobile App
+    aliases:
+    short_description: A serverless stopwatch Alexa Skill using lambda, zappa, flask-ask
+        and simpledb
+    assignment_group: gro:AD-Student Life Applications
+    notes:
+    maintained_by:
+      - pauldeden
+    developed_by_byu: true
+    ddd:
+        business_domain:
+        ubiquitous_language_url:
+        context_map_url:
+    links:
+        system_documentation_url: https://github.com/byu-oit/s-watch-alexa-skill
+        swagger_urls:
+    microservice: true
+    technologies_used:
+      - Python
+      - AWS Lambda
+      - Amazon Alexa
+    stages:
+        production:
+            urls:
+                product_page: https://github.com/byu-oit/s-watch-alexa-skill
+                physical_url:
+                virtual_url:
+            hosting_location:
+            aws_account:
+            relationships:
+                depends_on:
+                    db_read_write:
+                    db_read_only:
+                    software:
+                supports:
+                    software:
+                    service:
+                reverse_proxy:
+                runs_on:
+                    server_cluster:
+                    virtual_server:
+                    rack_server:
+                    blade_server:
+    tags:
+        data-sensitivity: confidential
+        app: s-watch-alexa-skill
+        team: gro:AD-Student Life Applications
